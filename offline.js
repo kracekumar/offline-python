@@ -33,7 +33,6 @@ $(function(){
     };
     //update the output
     var  updateOutput= function(output){
-            console.log(output.data.replace("\n", "<br/>"));
             $(".output").append(output.data);
     };
 

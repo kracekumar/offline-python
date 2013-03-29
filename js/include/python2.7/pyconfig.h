@@ -35,7 +35,7 @@
 #define DOUBLE_IS_LITTLE_ENDIAN_IEEE754 1
 
 /* Define if --enable-ipv6 is specified */
-#define ENABLE_IPV6 1
+/* #undef ENABLE_IPV6 */
 
 /* Define if flock needs to be linked with bsd library. */
 /* #undef FLOCK_NEEDS_LIBBSD */
@@ -51,7 +51,7 @@
 #define HAVE_ACOSH 1
 
 /* struct addrinfo (netdb.h) */
-#define HAVE_ADDRINFO 1
+/* #undef HAVE_ADDRINFO */
 
 /* Define to 1 if you have the `alarm' function. */
 #define HAVE_ALARM 1
@@ -63,7 +63,7 @@
 #define HAVE_ASINH 1
 
 /* Define to 1 if you have the <asm/types.h> header file. */
-#define HAVE_ASM_TYPES_H 1
+/* #undef HAVE_ASM_TYPES_H */
 
 /* Define to 1 if you have the `atanh' function. */
 #define HAVE_ATANH 1
@@ -98,17 +98,20 @@
 /* define to 1 if your sem_getvalue is broken. */
 #define HAVE_BROKEN_SEM_GETVALUE 1
 
+/* Define if `unsetenv` does not return an int. */
+/* #undef HAVE_BROKEN_UNSETENV */
+
 /* Define this if you have the type _Bool. */
 #define HAVE_C99_BOOL 1
 
-/* Define to 1 if you have the `chflags' function. */
+/* Define to 1 if you have the 'chflags' function. */
 /* #undef HAVE_CHFLAGS */
 
 /* Define to 1 if you have the `chown' function. */
 #define HAVE_CHOWN 1
 
 /* Define if you have the 'chroot' function. */
-#define HAVE_CHROOT 1
+/* #undef HAVE_CHROOT */
 
 /* Define to 1 if you have the `clock' function. */
 #define HAVE_CLOCK 1
@@ -129,16 +132,16 @@
 /* #undef HAVE_CTERMID_R */
 
 /* Define to 1 if you have the <curses.h> header file. */
-#define HAVE_CURSES_H 1
+/* #undef HAVE_CURSES_H */
 
 /* Define if you have the 'is_term_resized' function. */
-#define HAVE_CURSES_IS_TERM_RESIZED 1
+/* #undef HAVE_CURSES_IS_TERM_RESIZED */
 
 /* Define if you have the 'resizeterm' function. */
-#define HAVE_CURSES_RESIZETERM 1
+/* #undef HAVE_CURSES_RESIZETERM */
 
 /* Define if you have the 'resize_term' function. */
-#define HAVE_CURSES_RESIZE_TERM 1
+/* #undef HAVE_CURSES_RESIZE_TERM */
 
 /* Define to 1 if you have the declaration of `isfinite', and to 0 if you
    don't. */
@@ -157,7 +160,7 @@
 /* #undef HAVE_DECL_TZNAME */
 
 /* Define to 1 if you have the device macros. */
-#define HAVE_DEVICE_MACROS 1
+/* #undef HAVE_DEVICE_MACROS */
 
 /* Define if we have /dev/ptc. */
 /* #undef HAVE_DEV_PTC */
@@ -185,7 +188,7 @@
 #define HAVE_DYNAMIC_LOADING 1
 
 /* Define if you have the 'epoll' functions. */
-#define HAVE_EPOLL 1
+/* #undef HAVE_EPOLL */
 
 /* Define to 1 if you have the `erf' function. */
 #define HAVE_ERF 1
@@ -264,10 +267,9 @@
 
 /* Define if we can use gcc inline assembler to get and set x87 control word
    */
-#define HAVE_GCC_ASM_FOR_X87 1
 
 /* Define if you have the getaddrinfo function. */
-#define HAVE_GETADDRINFO 1
+/* #undef HAVE_GETADDRINFO */
 
 /* Define to 1 if you have the `getcwd' function. */
 #define HAVE_GETCWD 1
@@ -357,7 +359,7 @@
 #define HAVE_HYPOT 1
 
 /* Define to 1 if you have the <ieeefp.h> header file. */
-/* #undef HAVE_IEEEFP_H */
+#define HAVE_IEEEFP_H 1
 
 /* Define if you have the 'inet_aton' function. */
 #define HAVE_INET_ATON 1
@@ -390,13 +392,13 @@
    and long long is available and at least as big as an off_t. You may need to
    add some flags for configuration and compilation to enable this mode. (For
    Solaris and Linux, the necessary defines are already defined.) */
-#define HAVE_LARGEFILE_SUPPORT 1
+/* #undef HAVE_LARGEFILE_SUPPORT */
 
-/* Define to 1 if you have the `lchflags' function. */
+/* Define to 1 if you have the 'lchflags' function. */
 /* #undef HAVE_LCHFLAGS */
 
 /* Define to 1 if you have the `lchmod' function. */
-/* #undef HAVE_LCHMOD */
+#define HAVE_LCHMOD 1
 
 /* Define to 1 if you have the `lchown' function. */
 #define HAVE_LCHOWN 1
@@ -414,10 +416,10 @@
 /* #undef HAVE_LIBIEEE */
 
 /* Define to 1 if you have the <libintl.h> header file. */
-#define HAVE_LIBINTL_H 1
+/* #undef HAVE_LIBINTL_H */
 
 /* Define if you have the readline library (-lreadline). */
-/* #undef HAVE_LIBREADLINE */
+#define HAVE_LIBREADLINE 1
 
 /* Define to 1 if you have the `resolv' library (-lresolv). */
 /* #undef HAVE_LIBRESOLV */
@@ -429,10 +431,10 @@
 #define HAVE_LINK 1
 
 /* Define to 1 if you have the <linux/netlink.h> header file. */
-#define HAVE_LINUX_NETLINK_H 1
+/* #undef HAVE_LINUX_NETLINK_H */
 
 /* Define to 1 if you have the <linux/tipc.h> header file. */
-#define HAVE_LINUX_TIPC_H 1
+/* #undef HAVE_LINUX_TIPC_H */
 
 /* Define to 1 if you have the `log1p' function. */
 #define HAVE_LOG1P 1
@@ -447,7 +449,7 @@
 #define HAVE_LSTAT 1
 
 /* Define this if you have the makedev macro. */
-#define HAVE_MAKEDEV 1
+/* #undef HAVE_MAKEDEV */
 
 /* Define to 1 if you have the `memmove' function. */
 #define HAVE_MEMMOVE 1
@@ -468,13 +470,13 @@
 #define HAVE_MREMAP 1
 
 /* Define to 1 if you have the <ncurses.h> header file. */
-#define HAVE_NCURSES_H 1
+/* #undef HAVE_NCURSES_H */
 
 /* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
 /* #undef HAVE_NDIR_H */
 
 /* Define to 1 if you have the <netpacket/packet.h> header file. */
-#define HAVE_NETPACKET_PACKET_H 1
+/* #undef HAVE_NETPACKET_PACKET_H */
 
 /* Define to 1 if you have the `nice' function. */
 #define HAVE_NICE 1
@@ -501,7 +503,7 @@
 #define HAVE_POLL_H 1
 
 /* Define to 1 if you have the <process.h> header file. */
-/* #undef HAVE_PROCESS_H */
+#define HAVE_PROCESS_H 1
 
 /* Define if your compiler supports function prototype */
 #define HAVE_PROTOTYPES 1
@@ -534,25 +536,25 @@
 #define HAVE_REALPATH 1
 
 /* Define if you have readline 2.1 */
-/* #undef HAVE_RL_CALLBACK */
+#define HAVE_RL_CALLBACK 1
 
 /* Define if you can turn off readline's signal handling. */
-#define HAVE_RL_CATCH_SIGNAL 1
+/* #undef HAVE_RL_CATCH_SIGNAL */
 
 /* Define if you have readline 2.2 */
-#define HAVE_RL_COMPLETION_APPEND_CHARACTER 1
+/* #undef HAVE_RL_COMPLETION_APPEND_CHARACTER */
 
 /* Define if you have readline 4.0 */
-/* #undef HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK */
+#define HAVE_RL_COMPLETION_DISPLAY_MATCHES_HOOK 1
 
 /* Define if you have readline 4.2 */
-/* #undef HAVE_RL_COMPLETION_MATCHES */
+#define HAVE_RL_COMPLETION_MATCHES 1
 
 /* Define if you have rl_completion_suppress_append */
-#define HAVE_RL_COMPLETION_SUPPRESS_APPEND 1
+/* #undef HAVE_RL_COMPLETION_SUPPRESS_APPEND */
 
 /* Define if you have readline 4.0 */
-/* #undef HAVE_RL_PRE_INPUT_HOOK */
+#define HAVE_RL_PRE_INPUT_HOOK 1
 
 /* Define to 1 if you have the `round' function. */
 #define HAVE_ROUND 1
@@ -582,7 +584,7 @@
 #define HAVE_SETGID 1
 
 /* Define if you have the 'setgroups' function. */
-#define HAVE_SETGROUPS 1
+/* #undef HAVE_SETGROUPS */
 
 /* Define to 1 if you have the `setitimer' function. */
 #define HAVE_SETITIMER 1
@@ -618,19 +620,17 @@
 #define HAVE_SETVBUF 1
 
 /* Define to 1 if you have the <shadow.h> header file. */
-#define HAVE_SHADOW_H 1
+/* #undef HAVE_SHADOW_H */
 
 /* Define to 1 if you have the `sigaction' function. */
-#define HAVE_SIGACTION 1
 
 /* Define to 1 if you have the `siginterrupt' function. */
-#define HAVE_SIGINTERRUPT 1
+#define PY_NO_SHORT_FLOAT_REPR 1
 
 /* Define to 1 if you have the <signal.h> header file. */
 #define HAVE_SIGNAL_H 1
 
 /* Define to 1 if you have the `sigrelse' function. */
-#define HAVE_SIGRELSE 1
 
 /* Define to 1 if you have the `snprintf' function. */
 #define HAVE_SNPRINTF 1
@@ -642,7 +642,7 @@
 #define HAVE_SOCKADDR_STORAGE 1
 
 /* Define if you have the 'socketpair' function. */
-#define HAVE_SOCKETPAIR 1
+/* #undef HAVE_SOCKETPAIR */
 
 /* Define to 1 if you have the <spawn.h> header file. */
 #define HAVE_SPAWN_H 1
@@ -654,7 +654,7 @@
 #define HAVE_STATVFS 1
 
 /* Define if you have struct stat.st_mtim.tv_nsec */
-#define HAVE_STAT_TV_NSEC 1
+/* #undef HAVE_STAT_TV_NSEC */
 
 /* Define if you have struct stat.st_mtimensec */
 /* #undef HAVE_STAT_TV_NSEC2 */
@@ -682,7 +682,7 @@
 #define HAVE_STRING_H 1
 
 /* Define to 1 if you have the <stropts.h> header file. */
-#define HAVE_STROPTS_H 1
+/* #undef HAVE_STROPTS_H */
 
 /* Define to 1 if `st_birthtime' is a member of `struct stat'. */
 /* #undef HAVE_STRUCT_STAT_ST_BIRTHTIME */
@@ -729,7 +729,7 @@
 /* #undef HAVE_SYS_DIR_H */
 
 /* Define to 1 if you have the <sys/epoll.h> header file. */
-#define HAVE_SYS_EPOLL_H 1
+/* #undef HAVE_SYS_EPOLL_H */
 
 /* Define to 1 if you have the <sys/event.h> header file. */
 /* #undef HAVE_SYS_EVENT_H */
@@ -741,7 +741,7 @@
 /* #undef HAVE_SYS_LOADAVG_H */
 
 /* Define to 1 if you have the <sys/lock.h> header file. */
-/* #undef HAVE_SYS_LOCK_H */
+#define HAVE_SYS_LOCK_H 1
 
 /* Define to 1 if you have the <sys/mkdev.h> header file. */
 /* #undef HAVE_SYS_MKDEV_H */
@@ -787,7 +787,7 @@
 #define HAVE_SYS_TYPES_H 1
 
 /* Define to 1 if you have the <sys/un.h> header file. */
-#define HAVE_SYS_UN_H 1
+/* #undef HAVE_SYS_UN_H */
 
 /* Define to 1 if you have the <sys/utsname.h> header file. */
 #define HAVE_SYS_UTSNAME_H 1
@@ -808,7 +808,7 @@
 #define HAVE_TERMIOS_H 1
 
 /* Define to 1 if you have the <term.h> header file. */
-#define HAVE_TERM_H 1
+/* #undef HAVE_TERM_H */
 
 /* Define to 1 if you have the `tgamma' function. */
 #define HAVE_TGAMMA 1
@@ -888,7 +888,7 @@
 
 /* Define if tzset() actually switches the local timezone in a meaningful way.
    */
-#define HAVE_WORKING_TZSET 1
+/* #undef HAVE_WORKING_TZSET */
 
 /* Define if the zlib library has inflateCopy */
 #define HAVE_ZLIB_COPY 1
@@ -911,7 +911,7 @@
 /* #undef MAJOR_IN_SYSMACROS */
 
 /* Define if mvwdelch in curses.h is an expression. */
-#define MVWDELCH_IS_EXPRESSION 1
+/* #undef MVWDELCH_IS_EXPRESSION */
 
 /* Define to the address where bug reports for this package should be sent. */
 /* #undef PACKAGE_BUGREPORT */
@@ -944,7 +944,7 @@
 #define PY_FORMAT_LONG_LONG "ll"
 
 /* Define to printf format modifier for Py_ssize_t */
-#define PY_FORMAT_SIZE_T "z"
+/* #undef PY_FORMAT_SIZE_T */
 
 /* Define as the integral type used for Unicode representation. */
 #define PY_UNICODE_TYPE unsigned short
@@ -953,7 +953,7 @@
 /* #undef Py_DEBUG */
 
 /* Defined if Python is built as a shared library. */
-/* #undef Py_ENABLE_SHARED */
+#define Py_ENABLE_SHARED 1
 
 /* Define as the size of the unicode type. */
 #define Py_UNICODE_SIZE 2
@@ -980,16 +980,16 @@
 #define SIZEOF_FLOAT 4
 
 /* The size of `fpos_t', as computed by sizeof. */
-#define SIZEOF_FPOS_T 16
+#define SIZEOF_FPOS_T 8
 
 /* The size of `int', as computed by sizeof. */
 #define SIZEOF_INT 4
 
 /* The size of `long', as computed by sizeof. */
-#define SIZEOF_LONG 4
+#define SIZEOF_LONG 8
 
 /* The size of `long double', as computed by sizeof. */
-#define SIZEOF_LONG_DOUBLE 12
+#define SIZEOF_LONG_DOUBLE 16
 
 /* The size of `long long', as computed by sizeof. */
 #define SIZEOF_LONG_LONG 8
@@ -1007,16 +1007,16 @@
 #define SIZEOF_SHORT 2
 
 /* The size of `size_t', as computed by sizeof. */
-#define SIZEOF_SIZE_T 4
+#define SIZEOF_SIZE_T 8
 
 /* The size of `time_t', as computed by sizeof. */
-#define SIZEOF_TIME_T 4
+#define SIZEOF_TIME_T 8
 
 /* The size of `uintptr_t', as computed by sizeof. */
-#define SIZEOF_UINTPTR_T 4
+#define SIZEOF_UINTPTR_T 8
 
 /* The size of `void *', as computed by sizeof. */
-#define SIZEOF_VOID_P 4
+#define SIZEOF_VOID_P 8
 
 /* The size of `wchar_t', as computed by sizeof. */
 #define SIZEOF_WCHAR_T 4
@@ -1066,7 +1066,7 @@
 /* #undef USE_TOOLBOX_OBJECT_GLUE */
 
 /* Define if a va_list is an array of some kind */
-/* #undef VA_LIST_IS_ARRAY */
+#define VA_LIST_IS_ARRAY 1
 
 /* Define if you want SIGFPE handled (see Include/pyfpe.h). */
 /* #undef WANT_SIGFPE_HANDLER */
@@ -1076,7 +1076,7 @@
 /* #undef WANT_WCTYPE_FUNCTIONS */
 
 /* Define if WINDOW in curses.h offers a field _flags. */
-#define WINDOW_HAS_FLAGS 1
+/* #undef WINDOW_HAS_FLAGS */
 
 /* Define if you want documentation strings in extension modules */
 #define WITH_DOC_STRINGS 1
@@ -1118,7 +1118,7 @@
 #endif
 
 /* Define if arithmetic is subject to x87-style double rounding issue */
-#define X87_DOUBLE_ROUNDING 1
+/* #undef X87_DOUBLE_ROUNDING */
 
 /* Define on OpenBSD to activate all library features */
 /* #undef _BSD_SOURCE */
@@ -1137,6 +1137,9 @@
 
 /* This must be defined on some systems to enable large file support. */
 #define _LARGEFILE_SOURCE 1
+
+/* This must be defined on AIX systems to enable large file support. */
+/* #undef _LARGE_FILES */
 
 /* Define to 1 if on MINIX. */
 /* #undef _MINIX */
@@ -1245,10 +1248,5 @@
 #define STRICT_SYSV_CURSES /* Don't use ncurses extensions */
 #endif
 
-
-
-#undef HAVE_GCC_ASM_FOR_X87
-#undef HAVE_SIGACTION
-#undef HAVE_SIGINTERRUPT
-#undef HAVE_SIGRELSE
 #endif /*Py_PYCONFIG_H*/
+
