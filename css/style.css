@@ -1,0 +1,17 @@
+body {
+    border: none;
+    margin: 2;
+    width: 640px;
+    height: 600px;
+    overflow: auto;
+}
+
+#editor { 
+    height: 100%;
+    overflow: auto;
+}
+
+.output {
+    overflow: auto;
+    background: #ccc;
+}

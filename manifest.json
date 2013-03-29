@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+
+    "name": "Offline Python",
+    "description": "Evaluate Python code in browser without server",
+    "version": "0.0.1",
+
+    "permissions":["storage"],
+
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default_icon": "python.png",
+        "default_title": "Offline Python"
+    }
+
+}
